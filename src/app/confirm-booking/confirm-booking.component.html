@@ -1,0 +1,17 @@
+
+    <div *ngFor="let data of confirmData">
+        <p> {{data.name}}</p>
+        <p> {{data.time}}</p>
+        <p> {{data.area}}</p>
+        <p> {{data.price}}</p>
+    </div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; text-align: center; margin: 20px;">
+    <div *ngFor="let cd of confirmBookingData.users" style="border: 1px solid gray; padding: 10px; border-radius: 20px; width: 300px;">
+        <p>mobile : {{cd.mobile}}</p>
+        <p>email : {{cd.email}}</p>
+        <p>Seats : {{cd.noOfSeats}}</p>
+        <p>Total : {{cd.totalPrice}}</p>
+    </div> 
+</div>
+

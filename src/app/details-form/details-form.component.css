@@ -1,0 +1,10 @@
+.btn btn-info my-4 btn-block{
+    background-color: azure;
+    
+    }
+    .h4 mb-4{
+        margin-top: 20px;
+    }
+    .counter{
+        display:flex
+    }

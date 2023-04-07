@@ -1,0 +1,13 @@
+
+<div style="display: grid; grid-template-columns: repeat(3,1fr); gap: 50px; margin: 60px;">
+    <div *ngFor="let movie of cityRelatedMovieData[0].movie"
+        style="width: 300px; height: 320px; border: 2px solid gray; border-radius: 10px;">
+        <img src={{movie.imgUrl}} alt="movie-poster" style="width: 300px; height: 200px; border-radius: 10px;">
+        <p style="margin-left: 10px; font-weight: 800;">name: {{movie.name}}</p>
+        <div style="display: flex; justify-content: space-around;">
+            <p>Imdb: {{movie.imdb}}</p>
+            <button routerLink="/show" (click)="addtoBookShow(movie)">Book Show</button>
+        </div>
+    </div>
+</div>
+

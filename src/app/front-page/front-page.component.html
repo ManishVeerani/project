@@ -1,0 +1,13 @@
+
+
+<div style="position: absolute; right: 20px;">
+    <select name="city" id="city" (change)="selectValue($event)" (click)="onSubmit()">
+        <option value="">Select City</option>
+        <option *ngFor="let city of citiesData.cities" [value]="city.cityName">{{city.cityName}}</option>
+    </select>
+</div>
+
+<app-select-movie [cityRelatedMovieData]="cityRelatedMovieData"></app-select-movie>
+
+
+

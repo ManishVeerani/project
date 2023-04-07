@@ -1,0 +1,41 @@
+<form class="bookshowForm" (submit)="addUser($event)">
+    <h3 class="h4 mb-4">Book Show !</h3>
+
+    <div class="mb-4">
+        <div class="col">
+            <label>Mobile Number :</label>
+
+            <input type="text" formControlName="userName" class="form-control" placeholder="Enter Contact Number" id="mobile"/>
+        </div>
+        <br />
+        <div class="col">
+            <label>Email :</label>
+
+            <input type="email" formControlName="userPassword" class="form-control" placeholder="Enter Email" id="email"/>
+        </div>
+        <br />
+        <div>
+            <label>Number of Seats :</label>
+
+            <input type="number" formControlName="seat" class="form-control" placeholder="Enter Seat Number" [min]="1"
+                (change)="handleChange($event)" id="noOfSeats" />
+        </div>
+
+        <br />
+        <div class="col">
+            <label for="price">The total amount is :</label>
+
+            <input type="text" formControlName="price" class="form-control" placeholder="" id="totalPrice" />
+        </div>
+        <br />
+    </div>
+    <div style="display: flex; gap: 20px;">
+        <button class="btn btn-info my-4 btn-block" type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button routerLink="/confirm" (click)="onClick()">Confirm</button>
+    </div>
+    <hr />
+</form>
+
+
+

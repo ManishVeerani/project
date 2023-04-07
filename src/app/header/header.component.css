@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    font-family: sans-serif;
+}
+.name:hover{
+    transform: rotateY(20deg);
+    cursor: pointer;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.ab{
+    display: flex;
+    gap: 20px;
+}
+
+.ab .about:hover, .ab .login:hover{
+    color: blue;
+    cursor: pointer;
+}
